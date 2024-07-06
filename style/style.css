@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-pri: #000000;
+    --color-se: #f6f6f6;
+    --color-ter: #22d4fd;
+
+    --font-monserrat: "Montserrat", sans-serif;
+    --font-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--color-pri);
+    color: var(--color-se);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.he{
+ padding: 1% 0% 0% 15%;
+}
+
+.menu{
+ display: flex;
+ gap: 80px;
+}
+
+.he_link{
+    font-family: var(--font-monserrat);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-ter);
+    text-decoration: none;
+}
+
+.ti{
+    color: var(--color-ter);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 1% 7%;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.pre {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title_pre {
+    font-size: 1.8rem;
+    font-family: var(--font-krona);
+}
+
+.par_pre{
+    font-size: 1.3rem;
+    font-family: var(--font-monserrat);
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+}
+
+.subtitle{
+    font-family: var(--font-krona);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.button{
+    width: 50%;
+    border: 2px solid var(--color-ter);
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-se);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button:hover {
+    background-color: #272727;
+}
+
+.pre_img{
+    width: 50%;
+}
+
+.pie{
+    background-color: var(--color-ter);
+    padding: 15px;
+    color: var(--color-pri);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .he{
+        padding: 10%;
+       }
+       .menu{
+        justify-content: center;
+       }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .pre {
+        width: auto;
+    }
+}
